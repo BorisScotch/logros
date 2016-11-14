@@ -1,0 +1,332 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script language="javascript" type="text/javascript">
+$(function(){
+$('a[title]').tooltip();
+});
+
+</script>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+/* written by riliwan balogun http://www.facebook.com/riliwan.rabo*/
+.board{
+    
+margin: 60px auto;
+background: #fff;
+/*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
+}
+.board .nav-tabs {
+    position: relative;
+    /* border-bottom: 0; */
+    /* width: 80%; */
+    margin: 40px auto;
+    margin-bottom: 0;
+    box-sizing: border-box;
+
+}
+
+.board > div.board-inner{
+  
+}
+
+p.narrow{
+    width: 60%;
+    margin: 10px auto;
+}
+
+.liner{
+    height: 2px;
+    background: #ddd;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    /* background-color: #ffffff; */
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tabs{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: white;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+span.round-tabs.one{
+    color: rgb(87, 0, 84);border: 2px solid rgb(87, 0, 84);
+}
+
+li.active span.round-tabs.one{
+    background: #fff !important;
+    border: 2px solid #ddd;
+   color: #1998a8;
+}
+
+span.round-tabs.two{
+    color: #1998a8;border: 2px solid #1998a8;
+}
+
+li.active span.round-tabs.two{
+    background: #fff !important;
+    border: 2px solid #ddd;
+     color: rgb(87, 0, 84);
+}
+
+span.round-tabs.three{
+   color: rgb(87, 0, 84);border: 2px solid rgb(87, 0, 84);
+}
+
+li.active span.round-tabs.three{
+    background: #fff !important;
+    border: 2px solid #ddd;
+     color: #1998a8;
+}
+
+span.round-tabs.four{
+   color: #1998a8;border: 2px solid #1998a8;
+}
+
+li.active span.round-tabs.four{
+    background: #fff !important;
+    border: 2px solid #ddd;
+     color: rgb(87, 0, 84);
+}
+
+span.round-tabs.five{
+    color: rgb(87, 0, 84);border: 2px solid rgb(87, 0, 84);
+}
+
+li.active span.round-tabs.five{
+    background: #fff !important;
+    border: 2px solid #ddd;
+   color: #1998a8;
+}
+
+.nav-tabs > li.active > a span.round-tabs{
+    background: #fafafa;
+}
+.nav-tabs > li {
+    width: 20%;
+}
+/*li.active:before {
+    content: " ";
+    position: absolute;
+    left: 45%;
+    opacity:0;
+    margin: 0 auto;
+    bottom: -2px;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+    z-index: 1;
+    transition:0.2s ease-in-out;
+}*/
+.nav-tabs > li:after {
+    content: " ";
+    position: absolute;
+    left: 45%;
+   opacity:0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #ddd;
+    transition:0.1s ease-in-out;
+    
+}
+.nav-tabs > li.active:after {
+    content: " ";
+    position: absolute;
+    left: 45%;
+   opacity:1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: #ddd;
+    
+}
+.nav-tabs > li a{
+   width: 70px;
+   height: 70px;
+   margin: 20px auto;
+   border-radius: 100%;
+   padding: 0;
+}
+
+.nav-tabs > li a:hover{
+    background: transparent;
+}
+
+.tab-content{
+	padding:15px;
+}
+.tab-pane{
+   position: relative;
+}
+.tab-content .head{
+      font-size: 25px;
+      padding-bottom: 10px;
+}
+.btn-outline-rounded{
+    padding: 10px 40px;
+    margin: 20px 0;
+    border: 2px solid transparent;
+    border-radius: 25px;
+}
+
+.btn.green{
+    background-color:#5cb85c;
+    /*border: 2px solid #5cb85c;*/
+    color: #ffffff;
+}
+
+
+
+@media( max-width : 585px ){
+    
+    .board {
+height:auto !important;
+}
+    span.round-tabs {
+        font-size:16px;
+width: 50px;
+height: 50px;
+line-height: 50px;
+    }
+    .tab-content .head{
+        font-size:20px;
+        }
+    .nav-tabs > li a {
+width: 50px;
+height: 50px;
+line-height:50px;
+}
+
+.nav-tabs > li.active:after {
+content: " ";
+position: absolute;
+left: 35%;
+}
+
+.btn-outline-rounded {
+    padding:12px 20px;
+    }
+}
+
+</style>
+</head>
+
+<body><section style="">
+        <div class="containerrr">
+
+            <div class="row">
+<div class="bordes">
+                <div class="board" style="margin-top:0px; margin-bottom:0px;">
+                    
+                  <div class="board-inner">
+                    <ul class="navv navv-tabs" id="myTab" style="
+    margin-top: 0px;">
+                    <div class="liner"></div>
+                     <li class="active">
+                     <a href="#home" data-toggle="tab" title="" data-original-title="" aria-expanded="false">
+                      <span class="round-tabs one">
+                              <i class="glyphicon glyphicon-ok"></i>
+                      </span> 
+                  </a></li>
+
+                  <li class=""><a href="#profile" data-toggle="tab" title="" data-original-title="" aria-expanded="false">
+                     <span class="round-tabs two">
+                         <i class="glyphicon glyphicon-globe"></i>
+                     </span> 
+           </a>
+                 </li>
+                 <li class=""><a href="#messages" data-toggle="tab" title="" data-original-title="" aria-expanded="false">
+                     <span class="round-tabs three">
+                          <i class="glyphicon glyphicon-bookmark"></i>
+                     </span> </a>
+                     </li>
+
+                     <li class=""><a href="#settings" data-toggle="tab" title="" data-original-title="" aria-expanded="false">
+                         <span class="round-tabs four">
+                              <i class="glyphicon glyphicon-comment"></i>
+                         </span> 
+                     </a></li>
+
+                     <li class=""><a href="#doner" data-toggle="tab" title="" data-original-title="" aria-expanded="true">
+                         <span class="round-tabs five">
+                              <i class="glyphicon glyphicon-plus"></i>
+                         </span> </a>
+                     </li>
+                     
+                     </ul></div>
+
+                     <div class="tab-content">
+                      <div class="tab-pane fade active in" id="home">
+
+                          <h3 class="head text-center">Capacitamos a más de <strong>109.000 estudiantes</strong> mayores de 16 años. </h3>
+
+<h3 class="head text-center">Realizamos más de <strong>1.800 jornadas</strong> de capacitación.</h3><h3 class="head text-center">Logramos el <strong>100% de cobertura territorial</strong>, comprendiendo las 15 Comunas de la Ciudad.</h3>
+                          
+                          
+                          
+                      </div>
+                      <div class="tab-pane fade" id="profile">
+                          <h3 class="head text-center">Ampliamos el universo de establecimientos, alcanzando la totalidad de escuelas medias públicas, escuelas primarias para adultos, escuelas secundarias para adultos, centros educativos de nivel secundario, centros educativos de nivel primario, escuelas de educación especial, centros de educación no formal, bachilleratos populares, institutos de menores y establecimientos educativos dependientes de la Universidad de Buenos Aires y también del Ministerio de Defensa de la Nación.</h3>
+                          
+                          
+                          
+                          
+                      </div>
+                      <div class="tab-pane fade" id="messages">
+                          
+<h3 class="head text-center">En 2013, fuimos reconocidos internacionalmente por la <a class="pageenlaces" target="_blank" href="http://www.oas.org/es/"><strong>OEA (EDUCADEM)</strong></a> como una experiencia destacada de educación en valores y prácticas democráticas en el Cono Sur.</h3><h3 class="head text-center">También nos constituimos como un antecedente de proyectos en otras jurisdicciones de la Nación.</h3>
+                          
+                          
+                          
+                      </div>
+                      <div class="tab-pane fade" id="settings">
+                          <h3 class="head text-center">Fuimos considerados y mencionados como un hito en la historia de la educación electoral argentina por la Facultad de Ciencias Jurídicas y Sociales de la <a class="pageenlaces" target="_blank" href="http://www.unlp.edu.ar/">Universidad Nacional de La Plata (UNLA)</a>.</h3>
+                          
+                          
+                          
+                      </div>
+                      <div class="tab-pane fade" id="doner">
+  <div class="text-center">
+    <i class="img-intro icon-checkmark-circle"></i>
+</div>
+<h3 class="head text-center">En la edición 2014, "Mi voto, mi elección" fuimos destacados como una de las Prácticas Innovadoras del <a href="http://www.buenosaires.gob.ar/gobierno" target="_blank" class="pageenlaces">Ministerio de Gobierno</a> y formamos parte de la Jornada especial sobre Voto Joven convocada por la embajada de Canadá.</h3>
+
+</div>
+<div class="clearfix"></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+</body>
+</html>
